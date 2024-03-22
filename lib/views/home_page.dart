@@ -1,5 +1,6 @@
 import 'package:credit_app/components/bottom_nav_bar.dart';
 import 'package:credit_app/components/dashed_painter.dart';
+import 'package:credit_app/components/inactive_card.dart';
 import 'package:credit_app/components/main_credit_card.dart';
 import 'package:credit_app/constants/constants.dart';
 import 'package:flutter/material.dart';
@@ -233,69 +234,6 @@ class MyHomePage extends StatelessWidget {
             const MainCreditCard(),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class InActiveCard extends StatelessWidget {
-  const InActiveCard({
-    super.key,
-    required this.title,
-    required this.price,
-  });
-  final String title;
-  final String price;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 250,
-      width: 110,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(
-        children: [
-          const SizedBox(
-            height: 16 * 3,
-          ),
-          Transform.rotate(
-            angle: -math.pi / 2,
-            child: Text(
-              title,
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 18,
-              ),
-            ),
-          ),
-          const Spacer(),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 16),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  price,
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                  ),
-                ),
-                const SizedBox(width: 5),
-                const Text(
-                  '\$',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
       ),
     );
   }
