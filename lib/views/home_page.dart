@@ -7,6 +7,8 @@ import 'package:credit_app/views/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:google_fonts/google_fonts.dart';
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -51,9 +53,9 @@ class MyHomePage extends StatelessWidget {
                                     child: Center(
                                       child: Transform.rotate(
                                         angle: -180,
-                                        child: const Text(
+                                        child: Text(
                                           "1",
-                                          style: TextStyle(
+                                          style: GoogleFonts.inter(
                                             color: Colors.white,
                                             fontSize: 20,
                                             fontWeight: FontWeight.bold,
@@ -65,13 +67,13 @@ class MyHomePage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(width: 16),
-                              const Padding(
-                                padding: EdgeInsets.only(top: 16 * 5),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 16 * 5),
                                 child: Text(
                                   'My Loans',
-                                  style: TextStyle(
+                                  style: GoogleFonts.inter(
                                     color: Colors.white,
-                                    fontSize: 25,
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -91,18 +93,18 @@ class MyHomePage extends StatelessWidget {
                                 padding: const EdgeInsets.only(top: 16 * 5),
                                 child: Image.asset(
                                   'assets/icons/qr.png',
-                                  width: 25,
+                                  width: 22,
                                   color: Colors.white,
                                 ),
                               ),
                               const SizedBox(width: 16),
-                              const Padding(
-                                padding: EdgeInsets.only(top: 16 * 5),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 16 * 5),
                                 child: Text(
                                   'QR',
-                                  style: TextStyle(
+                                  style: GoogleFonts.inter(
                                     color: Colors.white,
-                                    fontSize: 20,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -140,9 +142,9 @@ class MyHomePage extends StatelessWidget {
                                   child: Center(
                                     child: Transform.rotate(
                                       angle: -180,
-                                      child: const Text(
+                                      child: Text(
                                         "4",
-                                        style: TextStyle(
+                                        style: GoogleFonts.inter(
                                           color: Colors.white,
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
@@ -154,11 +156,11 @@ class MyHomePage extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: 16),
-                            const Text(
+                            Text(
                               'Inactive',
-                              style: TextStyle(
+                              style: GoogleFonts.inter(
                                 color: Colors.white,
-                                fontSize: 25,
+                                fontSize: 22,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -167,7 +169,7 @@ class MyHomePage extends StatelessWidget {
                               padding: const EdgeInsets.only(right: 16),
                               child: Image.asset(
                                 'assets/icons/menu.png',
-                                width: 20,
+                                width: 18,
                                 color: Colors.white,
                               ),
                             ),
@@ -193,20 +195,21 @@ class MyHomePage extends StatelessWidget {
                                     ),
                                     Transform.rotate(
                                       angle: -math.pi / 2,
-                                      child: const Text(
+                                      child: Text(
                                         '10 Oct 2024',
-                                        style: TextStyle(
+                                        style: GoogleFonts.inter(
                                           color: Colors.white,
-                                          fontSize: 18,
+                                          fontSize: 16,
                                         ),
                                       ),
                                     ),
                                     const Spacer(),
-                                    const Padding(
-                                      padding: EdgeInsets.only(bottom: 16),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 16),
                                       child: Text(
                                         'Draft',
-                                        style: TextStyle(
+                                        style: GoogleFonts.inter(
                                           color: Colors.white24,
                                           fontSize: 18,
                                         ),

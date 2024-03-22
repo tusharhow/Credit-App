@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:google_fonts/google_fonts.dart';
+
 class InActiveCard extends StatelessWidget {
   const InActiveCard({
     super.key,
@@ -31,9 +33,9 @@ class InActiveCard extends StatelessWidget {
               angle: -math.pi / 2,
               child: Text(
                 title,
-                style: const TextStyle(
+                style: GoogleFonts.inter(
                   color: Colors.black,
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
               ),
             ),
@@ -46,15 +48,15 @@ class InActiveCard extends StatelessWidget {
                 children: [
                   Text(
                     price,
-                    style: const TextStyle(
+                    style: GoogleFonts.inter(
                       color: Colors.black,
-                      fontSize: 20,
+                      fontSize: 18,
                     ),
                   ),
                   const SizedBox(width: 5),
-                  const Text(
+                  Text(
                     '\$',
-                    style: TextStyle(
+                    style: GoogleFonts.inter(
                       color: Colors.black,
                       fontSize: 14,
                     ),

@@ -1,5 +1,6 @@
 import 'package:credit_app/constants/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({super.key});
@@ -33,11 +34,12 @@ class BottomNavBar extends StatelessWidget {
                     color: Colors.green.withOpacity(0.7),
                   ),
                   const SizedBox(width: 5),
-                  const Text(
+                  Text(
                     'Credits',
-                    style: TextStyle(
+                    style: GoogleFonts.inter(
                       color: secondaryColor,
                       fontWeight: FontWeight.bold,
+                      fontSize: 13,
                     ),
                   ),
                 ],
