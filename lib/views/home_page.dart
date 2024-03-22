@@ -3,6 +3,7 @@ import 'package:credit_app/components/dashed_painter.dart';
 import 'package:credit_app/components/inactive_card.dart';
 import 'package:credit_app/components/main_credit_card.dart';
 import 'package:credit_app/constants/constants.dart';
+import 'package:credit_app/views/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
@@ -216,14 +217,23 @@ class MyHomePage extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: 16),
-                            const InActiveCard(
+                            InActiveCard(
                               title: 'Audi Q8 TFSI',
                               price: '40K',
+                              onClick: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const DetailScreen(),
+                                  ),
+                                );
+                              },
                             ),
                             const SizedBox(width: 16),
-                            const InActiveCard(
+                            InActiveCard(
                               title: 'Equipment',
                               price: '800',
+                              onClick: () {},
                             ),
                           ],
                         ),
