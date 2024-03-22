@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-
-
 class InActiveCard extends StatelessWidget {
   const InActiveCard({
     super.key,
@@ -23,7 +21,7 @@ class InActiveCard extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(
-            height: 16 * 3,
+            height: 16 * 4,
           ),
           Transform.rotate(
             angle: -math.pi / 2,

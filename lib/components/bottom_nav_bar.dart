@@ -16,27 +16,27 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 5),
-            child: Container(
-              width: 100,
-              height: 45,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: const Row(
+          Container(
+            width: 110,
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(50),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.credit_card,
-                    color: primaryColor,
+                    color: Colors.green.withOpacity(0.7),
                   ),
-                  SizedBox(width: 5),
-                  Text(
+                  const SizedBox(width: 5),
+                  const Text(
                     'Credits',
                     style: TextStyle(
-                      color: primaryColor,
+                      color: secondaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -44,26 +44,20 @@ class BottomNavBar extends StatelessWidget {
               ),
             ),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.account_balance_wallet,
-              color: Colors.white,
-            ),
+          Image.asset(
+            'assets/icons/pie.png',
+            width: 20,
+            height: 20,
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
+          Image.asset(
+            'assets/icons/transfer.png',
+            width: 20,
+            height: 20,
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.credit_card,
-              color: Colors.white,
-            ),
+          Image.asset(
+            'assets/icons/pie.png',
+            width: 20,
+            height: 20,
           ),
         ],
       ),

@@ -1,3 +1,4 @@
+import 'package:credit_app/constants/constants.dart';
 import 'package:credit_app/views/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,10 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Credit App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
         useMaterial3: true,
       ),
       home: const MyHomePage(),

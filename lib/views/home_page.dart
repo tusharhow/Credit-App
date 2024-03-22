@@ -217,7 +217,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             const SizedBox(width: 16),
                             const InActiveCard(
-                              title: 'Audi Q8',
+                              title: 'Audi Q8 TFSI',
                               price: '40K',
                             ),
                             const SizedBox(width: 16),
